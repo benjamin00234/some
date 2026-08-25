@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dfe3eb;
+    color: #172033;
+}
+
+header {
+    background-color: #101722;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 25px 50px ;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+main {
+    padding: 100px 20px;
+    background: linear-gradient(
+        to bottom,
+        #1A326D 0%,
+        #1A326D 30%,
+        #F8F8FF 30%,
+        #F8F8FF 100%
+    );
+}
+
+
+
+.profile-card {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 80px 60px 50px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    position: relative;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 8px solid white;
+
+    position: absolute;
+    top: -90px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.profile-card h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    color: purple;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.information {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    margin: 40px 0;
+    padding: 25px;
+}
+
+.information p {
+    margin: 15px;
+}
+
+.information strong, .hobbies h2 {
+    color: purple;
+}
+
+.hobbies {
+    margin-bottom: 40px;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.hobby span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.hobby img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+}
+
+.hobby h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #172033;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fixed-button {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    background-color: purple;
+    color: white;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+footer {
+    background-color: #101722;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
